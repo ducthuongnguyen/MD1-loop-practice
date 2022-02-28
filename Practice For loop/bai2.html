@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 2: Viết chương trình nhập vào một số bất kỳ lớn hơn 0.
+ Tính tổng các phần tử từ 1 đến số vừa nhập vào.-->
+<body>
+Nhập 1 số bất kỳ lớn hơn 0<input type="number" id="nb">
+<button onclick="calSum()">Kết quả</button>
+<br><br>
+<p id="show"></p>
+<script>
+    function calSum() {
+        let n = +document.getElementById('nb').value;
+        let total=0;
+        for (let i = 1; i <= n; i++) {
+            total = total + i;
+        }
+        document.getElementById('show').innerHTML = 'Tổng các số từ ' + 1 + ' đến ' + n + ' là: ' + total;
+    }
+</script>
+</body>
+</html>
