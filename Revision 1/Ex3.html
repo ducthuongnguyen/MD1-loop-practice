@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<!--Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.-->
+<body>
+<script>
+    let n1 = 0;
+    let n2 = 1;
+    let nextNumber;
+    let numbers = prompt('Bạn muốn hiển thị bao nhiêu số trong dãy fibonacci?');
+    let i = 1;
+    while (i <= numbers) {
+        document.write(n1 + ' ');
+        nextNumber = n1 + n2;
+        n1 = n2;
+        n2 = nextNumber;
+        i++
+    }
+</script>
+</body>
+</html>

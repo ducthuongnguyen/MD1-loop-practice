@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập vào a: ');
+    let i;
+    let check = 'Là số nguyên tố';
+    if (i < 2) {
+        check = 'Không là số nguyên tố';
+    } else if (i == 2){
+        check = ' Là số nguyên tố'
+    }
+    for (i = 2; i < a; i++) {
+        if (a % i == 0) {
+            check = 'Không là số nguyên tố'
+            break;
+        }
+    }
+    alert(check);
+</script>
+</body>
+</html>
